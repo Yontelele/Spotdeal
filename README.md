@@ -1,7 +1,7 @@
 # Spotdeal - Mobile Subscription Management Platform
 
 ![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)
-![Status: Portfolio Project](https://img.shields.io/badge/Status-Portfolio%20Project-blue)
+![Status: Portfolio Project](https://img.shields.io/badge/Status-Portfolio-blue)
 ![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
