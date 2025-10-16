@@ -8,13 +8,10 @@
 
 Spotdeal is a comprehensive SaaS platform designed to streamline mobile subscription sales management for retail businesses. The platform enables sales representatives to quickly register sold subscriptions and provides management with real-time analytics and insights into sales performance.
 
-**Development Timeline:** ~1 year of solo development
-
-**Target Market:** Electronics retailers and telecom resellers (e.g., Media Markt, Elgiganten, Elon)
-
 ## Core Functionality
 
 ### Sales Flow
+
 1. **Registration:** Sales representatives log sold subscriptions with a few clicks
 2. **Data Capture:** System stores salesperson, subscription details, operator, timestamp
 3. **Analytics:** Real-time dashboard displays sales statistics per salesperson and operator
@@ -35,6 +32,7 @@ Spotdeal is a comprehensive SaaS platform designed to streamline mobile subscrip
 ## Technical Stack
 
 ### Backend
+
 - **Framework:** C# ASP.NET Core REST API
 - **Database:** SQL Server
 - **ORM:** Entity Framework Core
@@ -42,6 +40,7 @@ Spotdeal is a comprehensive SaaS platform designed to streamline mobile subscrip
 - **Authentication:** JWT-based authentication
 
 ### Frontend
+
 - **Framework:** React
 - **Styling:** Tailwind CSS
 - **Charts/Visualization:** Chart.js
@@ -49,6 +48,7 @@ Spotdeal is a comprehensive SaaS platform designed to streamline mobile subscrip
 - **API Communication:** Axios/Fetch
 
 ### Data Model
+
 - Users (Sales representatives, Managers, Admins)
 - Subscriptions (Product catalog)
 - Operators (Mobile carriers)
@@ -79,13 +79,16 @@ Spotdeal is a comprehensive SaaS platform designed to streamline mobile subscrip
 ## Screenshots
 
 ### Dashboard View
-*Real-time sales statistics and performance metrics*
+
+_Real-time sales statistics and performance metrics_
 
 ### Subscription Registration
-*Quick and intuitive interface for logging sales*
+
+_Quick and intuitive interface for logging sales_
 
 ### Analytics
-*Detailed breakdown by salesperson and operator using Chart.js visualizations*
+
+_Detailed breakdown by salesperson and operator using Chart.js visualizations_
 
 ## Technical Highlights
 
@@ -99,6 +102,7 @@ Spotdeal is a comprehensive SaaS platform designed to streamline mobile subscrip
 ## Development Approach
 
 This project demonstrates:
+
 - Full-stack development capabilities (C# backend + React frontend)
 - Database design and ORM implementation
 - RESTful API architecture and best practices
@@ -111,17 +115,20 @@ This project demonstrates:
 ## Use Cases
 
 **For Sales Representatives:**
+
 - Quick subscription registration during customer interactions
 - Search available mobile deals
 - View personal sales history
 
 **For Management:**
+
 - Monitor real-time sales performance
 - Track individual salesperson metrics
 - Analyze operator-specific trends
 - Generate sales reports
 
 **For Administrators:**
+
 - User management
 - Subscription catalog maintenance
 - Operator pricing updates
@@ -132,6 +139,7 @@ This project demonstrates:
 This project is licensed under **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International** (CC BY-NC-ND 4.0).
 
 **What this means:**
+
 - ✅ You may view and study the code for learning purposes
 - ✅ You may share links to this repository
 - ❌ You may NOT use this code for commercial purposes
@@ -140,14 +148,6 @@ This project is licensed under **Creative Commons Attribution-NonCommercial-NoDe
 
 See the [LICENSE](LICENSE) file for complete terms.
 
-## Contact
-
-For inquiries about the project, collaboration opportunities, or licensing:
-
-- **Email:** [your-email@example.com]
-- **LinkedIn:** [your-linkedin-profile]
-- **Portfolio:** [your-website.com]
-
 ---
 
-*Developed independently as a portfolio project demonstrating full-stack SaaS development capabilities.*
+_Developed independently as a portfolio project demonstrating full-stack SaaS development capabilities._
