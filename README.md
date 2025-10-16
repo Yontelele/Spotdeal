@@ -1,7 +1,7 @@
 # Spotdeal - Mobile Subscription Management Platform
 
 ![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)
-![Status: Portfolio Project](https://img.shields.io/badge/Status-Portfolio-blue)
+![Status: Portfolio](https://img.shields.io/badge/Status-Portfolio-blue)
 ![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
@@ -14,7 +14,7 @@
 
 ## About the Project
 
-Spotdeal is a comprehensive SaaS platform designed to streamline mobile subscription sales management for retail businesses. The platform enables sales representatives to quickly register sold subscriptions and provides management with real-time analytics and insights into sales performance.
+Spotdeal is a sales enablement platform built to help telecom sales representatives increase subscription sales by providing instant access to operator pricing, subscription plans, and phone discounts across all carriers. The system enables sales teams to quickly compare offers and present the most compelling deal to each customer, transforming complex pricing calculations into a clear, consultative workflow. Every completed sale is registered and tracked through a real-time dashboard that displays sales trends, individual performance metrics, and progress toward budget goals.
 
 ## Core Functionality
 
