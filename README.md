@@ -1,13 +1,14 @@
 # Spotdeal - Mobile Subscription Management Platform
 
 ![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)
-![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=c-sharp&logoColor=white)
-![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat&logo=dotnet&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
-![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat&logo=microsoft-sql-server&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Portfolio_Project-blue)
-![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red)
+![Status: Portfolio Project](https://img.shields.io/badge/Status-Portfolio%20Project-blue)
+![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
+![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?logo=microsoft-sql-server&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?logo=microsoft-azure&logoColor=white)
 
 > **NOTICE:** This is a portfolio project. Commercial use is strictly prohibited. See [LICENSE](LICENSE) for details.
 
