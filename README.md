@@ -1,76 +1,153 @@
+# Spotdeal - Mobile Subscription Management SaaS Platform
+
 ![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)
 
-# [Projektnamn] - Fullskalig SaaS Plattform
+> **NOTICE:** This is a portfolio project. Commercial use is strictly prohibited. See [LICENSE](LICENSE) for details.
 
-> **OBS:** Detta är ett portfolio-projekt. Kommersiell användning är ej tillåten. Se LICENSE för detaljer.
+## About the Project
 
-## Om Projektet
+Spotdeal is a comprehensive SaaS platform designed to streamline mobile subscription sales management for retail businesses. The platform enables sales representatives to quickly register sold subscriptions and provides management with real-time analytics and insights into sales performance.
 
-[Kort beskrivning av vad plattformen gör]
+**Development Timeline:** ~1 year of solo development
 
-Detta projekt utvecklades under ca 1 år och demonstrerar fullstack-utveckling med moderna teknologier.
+**Target Market:** Electronics retailers and telecom resellers (e.g., Media Markt, Elgiganten, Elon)
 
-## Teknisk Stack
+## Core Functionality
+
+### Sales Flow
+1. **Registration:** Sales representatives log sold subscriptions with a few clicks
+2. **Data Capture:** System stores salesperson, subscription details, operator, timestamp
+3. **Analytics:** Real-time dashboard displays sales statistics per salesperson and operator
+4. **Order Management:** Full CRUD operations including order cancellation for customer returns
+
+### Key Features
+
+- ✅ Fast subscription registration interface
+- ✅ Mobile deal search and filtering
+- ✅ Real-time sales dashboard with statistics
+- ✅ Sales performance tracking per employee
+- ✅ Operator-specific analytics
+- ✅ Order management with cancellation support
+- ✅ Transaction history and audit trail
+- ✅ User authentication and authorization
+- ✅ Responsive design for desktop and mobile use
+
+## Technical Stack
 
 ### Backend
-- [Ditt backend-ramverk, t.ex. Node.js/Express, Django, .NET etc]
-- [Databas, t.ex. PostgreSQL, MongoDB]
-- [Autentisering, t.ex. JWT, OAuth]
+- **Framework:** C# ASP.NET Core REST API
+- **Database:** SQL Server
+- **ORM:** Entity Framework Core
+- **Architecture:** RESTful API design
+- **Authentication:** JWT-based authentication
 
 ### Frontend
-- [Ditt frontend-ramverk, t.ex. React, Vue, Angular]
-- [Styling, t.ex. Tailwind, Material-UI]
-- [State management, t.ex. Redux, Zustand]
+- **Framework:** React
+- **Styling:** Tailwind CSS
+- **Charts/Visualization:** Chart.js
+- **State Management:** React Hooks
+- **API Communication:** Axios/Fetch
 
-## Funktioner
+### Data Model
+- Users (Sales representatives, Managers, Admins)
+- Subscriptions (Product catalog)
+- Operators (Mobile carriers)
+- Transactions (Sales records)
+- Sales statistics and aggregations
 
-- ✅ [Huvudfunktion 1]
-- ✅ [Huvudfunktion 2]
-- ✅ [Huvudfunktion 3]
-- ✅ [etc]
+## System Architecture
 
-## Arkitektur
-
-[Kort beskrivning av hur systemet är uppbyggt]
+```
+┌─────────────────┐
+│  React Frontend │
+│  (Tailwind CSS) │
+└────────┬────────┘
+         │ HTTPS/REST
+         ▼
+┌─────────────────┐
+│   ASP.NET API   │
+│  (C# REST API)  │
+└────────┬────────┘
+         │ EF Core
+         ▼
+┌─────────────────┐
+│   SQL Server    │
+│   (Database)    │
+└─────────────────┘
+```
 
 ## Screenshots
 
-[Om du vill - lägg till några screenshots i en /docs/images mapp]
+### Dashboard View
+*Real-time sales statistics and performance metrics*
 
-## Installation (För Lokalt Visa)
+### Subscription Registration
+*Quick and intuitive interface for logging sales*
 
-**OBS:** Projektet kräver konfiguration av miljövariabler som inte ingår i repot.
-```bash
-# Klona projektet
-git clone [din-repo-url]
+### Analytics
+*Detailed breakdown by salesperson and operator using Chart.js visualizations*
 
-# Installera dependencies
-npm install  # eller yarn/pnpm
+## Technical Highlights
 
-# Kopiera .env.example till .env och fyll i dina egna värden
-cp .env.example .env
+- **Performance Optimized:** Efficient database queries with Entity Framework
+- **Scalable Architecture:** RESTful API design supports future expansion
+- **Security:** Role-based access control and secure authentication
+- **Responsive Design:** Works seamlessly on desktop and mobile devices
+- **Data Integrity:** Transaction management ensures consistent data state
+- **Modern UI/UX:** Clean interface built with Tailwind CSS components
 
-# Kör projektet
-npm run dev
-```
+## Development Approach
 
-## Licens
+This project demonstrates:
+- Full-stack development capabilities (C# backend + React frontend)
+- Database design and ORM implementation
+- RESTful API architecture and best practices
+- Modern frontend development with React and Tailwind
+- Data visualization with Chart.js
+- User authentication and authorization
+- CRUD operations and business logic implementation
+- Solo project management and execution
 
-Detta projekt är licensierat under CC BY-NC-ND 4.0 - se [LICENSE](LICENSE) filen för detaljer.
+## Use Cases
 
-**Detta innebär:**
-- ✅ Du får titta på och studera koden
-- ✅ Du får dela länkar till projektet
-- ❌ Du får INTE använda koden kommersiellt
-- ❌ Du får INTE skapa modifierade versioner
+**For Sales Representatives:**
+- Quick subscription registration during customer interactions
+- Search available mobile deals
+- View personal sales history
 
-## Kontakt
+**For Management:**
+- Monitor real-time sales performance
+- Track individual salesperson metrics
+- Analyze operator-specific trends
+- Generate sales reports
 
-För frågor om projektet eller samarbetsmöjligheter:
-- **Email:** [din email]
-- **LinkedIn:** [din profil]
-- **Portfolio:** [din hemsida om du har]
+**For Administrators:**
+- User management
+- Subscription catalog maintenance
+- Operator pricing updates
+- System configuration
+
+## License
+
+This project is licensed under **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International** (CC BY-NC-ND 4.0).
+
+**What this means:**
+- ✅ You may view and study the code for learning purposes
+- ✅ You may share links to this repository
+- ❌ You may NOT use this code for commercial purposes
+- ❌ You may NOT create or distribute modified versions
+- ❌ You may NOT use this code in production environments
+
+See the [LICENSE](LICENSE) file for complete terms.
+
+## Contact
+
+For inquiries about the project, collaboration opportunities, or licensing:
+
+- **Email:** [your-email@example.com]
+- **LinkedIn:** [your-linkedin-profile]
+- **Portfolio:** [your-website.com]
 
 ---
 
-*Utvecklat som del av mitt arbete hos [Företagsnamn]. Projektet publiceras med tillåtelse för portfolioändamål.*
+*Developed independently as a portfolio project demonstrating full-stack SaaS development capabilities.*
