@@ -1,4 +1,4 @@
-![Logga](./loggz.png)
+![Logo Banner](./docs/logo_banner.png)
 
 <div align="center">
 
@@ -22,39 +22,14 @@
 
 Spotdeal is a sales enablement platform built to help telecom sales representatives increase subscription sales by providing instant access to operator pricing, subscription plans, and phone discounts across all carriers. The system enables sales teams to quickly compare offers and present the most compelling deal to each customer, transforming complex pricing calculations into a clear, consultative workflow. Every completed sale is registered and tracked through a real-time dashboard that displays sales trends, individual performance, and progress toward budget goals.
 
-## 🛠️ Tech Stack
-
-**Backend**
-
-- ASP.NET Core Web API (C#)
-- Entity Framework Core
-- SQL Server
-- JWT Authentication
-
-**Frontend**
-
-- React + TypeScript
-- Tailwind CSS
-- Chart.js
-- Axios
-
-**Infrastructure**
-
-- Azure App Service
-- Azure SQL Database
-
 ## 📸 Screenshots
 
 ### Home Screen
 
 ![Home Screen](./bilz.png)
 
-### Dashboard View
-
-![Dashboard](./tete.jpg)
-
 <details>
-<summary>📱 <b>Sales Registration Flow</b> (Click to expand)</summary>
+<summary>📱 <b>Sales Registration Flow</b></summary>
 
 <br>
 
@@ -94,13 +69,13 @@ _Success message with order summary and receipt_
 </details>
 
 <details>
-<summary>📊 <b>Dashboard & Analytics</b> (Click to expand)</summary>
+<summary>📊 <b>Dashboard & Analytics</b></summary>
 
 <br>
 
 ### Sales Overview
 
-![Sales Overview](./docs/images/dashboard-overview.png)
+![Dashboard](./docs/dashboard.jpg)
 _Real-time statistics showing total sales, revenue, and trends_
 
 ---
@@ -127,7 +102,7 @@ _Interactive charts showing sales trends over time_
 </details>
 
 <details>
-<summary>🔧 <b>Admin Features</b> (Click to expand)</summary>
+<summary>🔧 <b>Admin Features</b></summary>
 
 <br>
 
