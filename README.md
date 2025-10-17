@@ -10,7 +10,7 @@
 ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?logo=microsoft-sql-server&logoColor=white)
 ![Azure](https://img.shields.io/badge/Azure-0078D4?logo=microsoft-azure&logoColor=white)
 
-![Profile Banner](./bilz.png)
+<!-- ![Profile Banner](./bilz.png) -->
 
 ![Profile Banners](./tete.jpg)
 
