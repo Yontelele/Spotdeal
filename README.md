@@ -14,71 +14,61 @@
 
 </div>
 
-<!-- ![Profile Banner](./bilz.png) -->
-
-![Profile Banners](./tete.jpg)
-
 > **NOTICE:** This is a portfolio project. Commercial use is strictly prohibited. See [LICENSE](LICENSE) for details.
 
 ## About the Project
 
 Spotdeal is a sales enablement platform built to help telecom sales representatives increase subscription sales by providing instant access to operator pricing, subscription plans, and phone discounts across all carriers. The system enables sales teams to quickly compare offers and present the most compelling deal to each customer, transforming complex pricing calculations into a clear, consultative workflow. Every completed sale is registered and tracked through a real-time dashboard that displays sales trends, individual performance, and progress toward budget goals.
 
-## Core Features
+## 📸 Screenshots
 
-**Sales Registration**
+### Dashboard View
 
-- Quick subscription registration interface for completed sales
-- Capture salesperson, operator, subscription details, and timestamp
-- CRUD operations with order cancellation support for customer returns
+> **[ADD SCREENSHOT HERE: Main dashboard showing sales statistics, charts, and performance metrics]**
 
-**Pricing Intelligence**
+![Dashboard](./tete.jpg)
 
-- Real-time access to all operator subscription plans
-- Device discount calculations across all carriers
-- Instant offer comparison to find the best deal for each customer
+### Sales Registration
 
-**Performance Tracking**
+> **[ADD SCREENSHOT HERE: Sales registration interface where reps log completed sales]**
 
-- Live dashboard with sales statistics and trends
-- Individual sales representative performance metrics
-- Operator-specific sales analytics
-- Budget goal tracking and progress visualization
+![Sales Registration](./bilz.png)
 
-**Analytics & Reporting**
+### Pricing Comparison
 
-- Interactive charts using Chart.js for data visualization
-- Sales trends over time with filtering capabilities
-- Transaction history and audit trail
-- Team and individual performance breakdowns
+> **[ADD SCREENSHOT HERE: Pricing tool showing operator plans and device discounts]**
 
-## Technical Stack
+![Pricing Tool](./peng.png)
 
-### Backend
+## ⚡ Key Features
 
-- **Framework:** ASP.NET Core Web API (C#)
-- **Database:** SQL Server
-- **ORM:** Entity Framework Core
-- **Architecture:** RESTful API with clean architecture principles
-- **Authentication:** JWT-based authentication
-- **Deployment:** Azure App Service
+- **Instant Sales Registration** – Log completed subscriptions in seconds
+- **Smart Pricing Tools** – Compare operator plans and device discounts across all carriers
+- **Real-Time Analytics** – Track sales trends, individual performance, and budget progress
+- **Interactive Dashboards** – Visualize sales data with Chart.js
+- **Order Management** – Full CRUD operations with cancellation support
+- **Role-Based Access** – Secure JWT authentication for reps and managers
 
-### Frontend
+## 🛠️ Tech Stack
 
-- **Framework:** React with TypeScript
-- **Styling:** Tailwind CSS
-- **Charts:** Chart.js for data visualization
-- **State Management:** React Hooks (useState, useEffect, useContext)
-- **HTTP Client:** Axios for API communication
-- **Build Tool:** Vite
+**Backend**
 
-### Database Schema
+- ASP.NET Core Web API (C#)
+- Entity Framework Core
+- SQL Server
+- JWT Authentication
 
-- **Users:** Sales representatives, managers, and administrators
-- **Subscriptions:** Operator plans and pricing catalog
-- **Operators:** Mobile carrier information
-- **Transactions:** Sales records with full audit trail
-- **Devices:** Phone catalog with discount mappings
+**Frontend**
+
+- React + TypeScript
+- Tailwind CSS
+- Chart.js
+- Axios
+
+**Infrastructure**
+
+- Azure App Service
+- Azure SQL Database
 
 ## License
 
