@@ -16,7 +16,7 @@
 
 </div>
 
-<!-- > **NOTICE:** This is a portfolio project. Commercial use is strictly prohibited. See [LICENSE](LICENSE) for details. -->
+> **NOTICE:** This is a portfolio project. Commercial use is strictly prohibited. See [LICENSE](LICENSE) for details.
 
 ## About the Project
 
