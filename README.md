@@ -1,3 +1,5 @@
+![Icon](./logga.png)
+
 # Spotdeal – Telecom Subscription Sales Platform 📱
 
 ![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)
@@ -20,21 +22,15 @@ Spotdeal is a sales enablement platform built to help telecom sales representati
 
 ### Dashboard View
 
-> **[ADD SCREENSHOT HERE: Main dashboard showing sales statistics, charts, and performance metrics]**
-
 ![Dashboard](./tete.jpg)
 
 ### Sales Registration
-
-> **[ADD SCREENSHOT HERE: Sales registration interface where reps log completed sales]**
 
 ![Sales Registration](./bilz.png)
 
 ### Pricing Comparison
 
-> **[ADD SCREENSHOT HERE: Pricing tool showing operator plans and device discounts]**
-
-![Pricing Tool](./peng.png)
+![Pricing Tool](./pling.png)
 
 ## ⚡ Key Features
 
