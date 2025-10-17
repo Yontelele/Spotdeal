@@ -6,7 +6,6 @@ import { CartProvider } from "./Context/CartContext"
 import { AppProvider } from "./Context/AppContext"
 import { Routing } from "./Authorization/Routing"
 import { Toaster } from "react-hot-toast"
-import ModalAddPhoneToCart from "./Components/Modals/ModalAddPhoneToCart"
 import { ApiError } from "./Authorization/ApiHelper"
 import PrefetchData from "./Hooks/PrefetchData"
 
@@ -34,7 +33,6 @@ function App() {
               <PrefetchData />
               <Routing />
               <Toaster position="bottom-right" />
-              <ModalAddPhoneToCart />
             </RegistreringProvider>
           </PhoneProvider>
         </CartProvider>
