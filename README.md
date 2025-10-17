@@ -1,4 +1,4 @@
-![Logga](./loggan.png)
+![Logga](./loggz.png)
 
 # Spotdeal – Telecom Subscription Sales Platform
 
