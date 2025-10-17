@@ -24,11 +24,13 @@ Spotdeal is a sales enablement platform built to help telecom sales representati
 
 ## 📸 Screenshots
 
-### Sales Registration
+### Home Screen
 
 > **[ADD SCREENSHOT HERE: Main dashboard showing sales statistics, charts, and performance metrics]**
 
 ![Sales Registration](./bilz.png)
+
+### Sales Registration
 
 > **[ADD SCREENSHOT HERE: Main dashboard showing sales statistics, charts, and performance metrics]**
 
