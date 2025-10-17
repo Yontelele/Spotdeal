@@ -12,7 +12,7 @@
 
 ![Profile Banner](./bilz.png)
 
-![Profile Banners](./yee.png)
+![Profile Banners](./tete.jpg)
 
 > **NOTICE:** This is a portfolio project. Commercial use is strictly prohibited. See [LICENSE](LICENSE) for details.
 
