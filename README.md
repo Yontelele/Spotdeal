@@ -47,21 +47,125 @@ Spotdeal is a sales enablement platform built to help telecom sales representati
 
 ### Home Screen
 
-> **[ADD SCREENSHOT HERE: Main dashboard showing sales statistics, charts, and performance metrics]**
-
-![Sales Registration](./bilz.png)
-
-### Sales Registration
-
-> **[ADD SCREENSHOT HERE: Main dashboard showing sales statistics, charts, and performance metrics]**
-
-![Sales Registrationn](./steg.png)
+![Home Screen](./bilz.png)
 
 ### Dashboard View
 
-> **[ADD SCREENSHOT HERE: Main dashboard showing sales statistics, charts, and performance metrics]**
-
 ![Dashboard](./tete.jpg)
+
+<details>
+<summary>📱 <b>Sales Registration Flow</b> (Click to expand)</summary>
+
+<br>
+
+### Step 1: Select Subscription
+
+![Select Subscription](./steg.png)
+_Sales rep selects the subscription plan sold to the customer_
+
+---
+
+### Step 2: Choose Device
+
+![Choose Device](./docs/images/step2-device.png)
+_Select phone model and view available discounts_
+
+---
+
+### Step 3: Add to Cart
+
+![Add to Cart](./docs/images/step3-cart.png)
+_Review selected items in cart with calculated discounts_
+
+---
+
+### Step 4: Confirm Sale
+
+![Confirm Sale](./docs/images/step4-confirm.png)
+_Confirm details and register the completed sale_
+
+---
+
+### Step 5: Sale Confirmation
+
+![Confirmation](./docs/images/step5-success.png)
+_Success message with order summary and receipt_
+
+</details>
+
+<details>
+<summary>📊 <b>Dashboard & Analytics</b> (Click to expand)</summary>
+
+<br>
+
+### Sales Overview
+
+![Sales Overview](./docs/images/dashboard-overview.png)
+_Real-time statistics showing total sales, revenue, and trends_
+
+---
+
+### Performance Metrics
+
+![Performance](./docs/images/dashboard-performance.png)
+_Individual and team performance tracking_
+
+---
+
+### Operator Breakdown
+
+![Operator Stats](./docs/images/dashboard-operators.png)
+_Sales distribution across different mobile carriers_
+
+---
+
+### Monthly Trends
+
+![Trends](./docs/images/dashboard-trends.png)
+_Interactive charts showing sales trends over time_
+
+</details>
+
+<details>
+<summary>🔧 <b>Admin Features</b> (Click to expand)</summary>
+
+<br>
+
+### Manage Subscriptions
+
+![Manage Subscriptions](./docs/images/admin-subscriptions.png)
+_Add, edit, or remove subscription plans_
+
+---
+
+### Manage Devices
+
+![Manage Devices](./docs/images/admin-devices.png)
+_Update phone catalog and discount mappings_
+
+---
+
+### User Management
+
+![User Management](./docs/images/admin-users.png)
+_Manage sales representatives and permissions_
+
+</details>
+
+## ⚡ Key Features
+
+- **Instant Sales Registration** – Log completed subscriptions in seconds
+- **Smart Pricing Tools** – Compare operator plans and device discounts across all carriers
+- **Real-Time Analytics** – Track sales trends, individual performance, and budget progress
+- **Interactive Dashboards** – Visualize sales data with Chart.js
+- **Order Management** – Full CRUD operations with cancellation support
+- **Role-Based Access** – Secure JWT authentication for reps and managers
+
+## 💡 The Problem It Solves
+
+Sales reps struggle to quickly compare subscription plans and calculate device discounts across multiple carriers. Spotdeal transforms complex pricing into instant, compelling customer offers.
+
+**Example:** A customer paying 399 kr/month can be shown a better deal at 299 kr/month with 1,000 kr off their device—calculated in seconds. This consultative approach increases conversion rates while helping teams hit their targets.
 
 ## License
 
