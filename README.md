@@ -69,4 +69,8 @@ See the [LICENSE](LICENSE) file for complete terms.
 
 ---
 
+<div align="center">
+
 _Developed independently as a portfolio project demonstrating full-stack SaaS development capabilities._
+
+</div>
