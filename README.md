@@ -4,8 +4,6 @@
 
 # Spotdeal – Telecom Subscription Sales Platform
 
-</div>
-
 ![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)
 ![Status: Portfolio](https://img.shields.io/badge/Status-Portfolio-blue)
 ![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white)
@@ -16,7 +14,9 @@
 ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?logo=microsoft-sql-server&logoColor=white)
 ![Azure](https://img.shields.io/badge/Azure-0078D4?logo=microsoft-azure&logoColor=white)
 
-> **NOTICE:** This is a portfolio project. Commercial use is strictly prohibited. See [LICENSE](LICENSE) for details.
+</div>
+
+<!-- > **NOTICE:** This is a portfolio project. Commercial use is strictly prohibited. See [LICENSE](LICENSE) for details. -->
 
 ## About the Project
 
