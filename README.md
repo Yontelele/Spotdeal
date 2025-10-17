@@ -30,15 +30,6 @@ Spotdeal is a sales enablement platform built to help telecom sales representati
 
 ![Pricing Tool](./pling.png)
 
-## ⚡ Key Features
-
-- **Instant Sales Registration** – Log completed subscriptions in seconds
-- **Smart Pricing Tools** – Compare operator plans and device discounts across all carriers
-- **Real-Time Analytics** – Track sales trends, individual performance, and budget progress
-- **Interactive Dashboards** – Visualize sales data with Chart.js
-- **Order Management** – Full CRUD operations with cancellation support
-- **Role-Based Access** – Secure JWT authentication for reps and managers
-
 ## 🛠️ Tech Stack
 
 **Backend**
