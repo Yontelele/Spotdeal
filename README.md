@@ -98,7 +98,7 @@ _Success message with order summary and receipt_
 </details>
 
 <details>
-<summary>📄 <b>Subscriptions Overview</b></summary>
+<summary>🔍 <b>Price Comparison</b></summary>
 
 <br>
 
