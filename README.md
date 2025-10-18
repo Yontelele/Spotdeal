@@ -102,7 +102,7 @@ Spotdeal is a sales enablement platform built to help telecom sales representati
 
 ### Step 7: Sale Confirmation
 
-![Confirmation](./docs/sale_confirmation.png)
+![Sale Confirmation](./docs/sale_confirmation.png)
 
 > _Order successfully registered with confirmation number_
 
