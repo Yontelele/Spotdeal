@@ -155,23 +155,15 @@ You may view and reference the code, but commercial use, modifications, and redi
 
 ## License
 
-[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+Licensed under **CC BY-NC-ND 4.0** – shared for educational and portfolio purposes.
 
-This is a portfolio project. You may view and study the code, but commercial use and modifications are prohibited. See [LICENSE](LICENSE) for details.
+You may view and study the code, but commercial use, modifications, and redistribution are not permitted. See [LICENSE](LICENSE) for full terms.
 
 ## License
 
-This project is licensed under **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International** (CC BY-NC-ND 4.0).
+This project is licensed under **CC BY-NC-ND 4.0** and is available for educational review only.
 
-**What this means:**
-
-- ✅ You may view and study the code for learning purposes
-- ✅ You may share links to this repository
-- ❌ You may NOT use this code for commercial purposes
-- ❌ You may NOT create or distribute modified versions
-- ❌ You may NOT use this code in production environments
-
-See the [LICENSE](LICENSE) file for complete terms.
+Commercial use, derivative works, and redistribution are strictly prohibited. See [LICENSE](LICENSE) for complete terms.
 
 ---
 
