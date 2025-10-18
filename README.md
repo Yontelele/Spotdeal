@@ -85,29 +85,15 @@ _Success message with order summary and receipt_
 
 ### Sales Overview
 
-![Dashboard](./docs/dashboard.jpg)
+![Sales Overview](./docs/sales_overview.jpg)
 _Real-time statistics showing total sales, revenue, and trends_
 
 ---
 
-### Performance Metrics
+### Performance Table
 
-![Performance](./docs/sales_table.png)
+![Performance Table](./docs/performance_table.png)
 _Individual and team performance tracking_
-
----
-
-### Operator Breakdown
-
-![Operator Stats](./docs/images/dashboard-operators.png)
-_Sales distribution across different mobile carriers_
-
----
-
-### Monthly Trends
-
-![Trends](./docs/images/dashboard-trends.png)
-_Interactive charts showing sales trends over time_
 
 </details>
 
