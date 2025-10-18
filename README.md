@@ -24,10 +24,6 @@ Spotdeal is a sales enablement platform built to help telecom sales representati
 
 ## 📸 Screenshots
 
-<!-- ### Home Screen
-
-![Home Screen](./bilz.png) -->
-
 <details>
 <summary>📱 <b>Sales Registration Flow</b></summary>
 
@@ -35,7 +31,7 @@ Spotdeal is a sales enablement platform built to help telecom sales representati
 
 ### Step 1: Select Operator
 
-![Select Subscription](./docs/select_operator.png)
+![Select Operator](./docs/select_operator.png)
 _Sales rep selects the subscription plan sold to the customer_
 
 ---
@@ -49,14 +45,14 @@ _Sales rep selects the subscription plan sold to the customer_
 
 ### Step 3: Add Phone
 
-![Choose Device](./docs/add_phone.png)
+![Add Phone](./docs/add_phone.png)
 _Select phone model and view available discounts_
 
 ---
 
 ### Step 4: Choose Phone
 
-![Add to Cart](./docs/choose_phone_color.png)
+![Choose Phone](./docs/choose_phone_color.png)
 _Review selected items in cart with calculated discounts_
 
 ---
@@ -83,7 +79,7 @@ _Success message with order summary and receipt_
 </details>
 
 <details>
-<summary>📊 <b>Dashboard & Analytics</b></summary>
+<summary>📊 <b>Dashboard</b></summary>
 
 <br>
 
@@ -96,7 +92,7 @@ _Real-time statistics showing total sales, revenue, and trends_
 
 ### Performance Metrics
 
-![Performance](./docs/images/dashboard-performance.png)
+![Performance](./docs/sales_table.png)
 _Individual and team performance tracking_
 
 ---
