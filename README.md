@@ -98,21 +98,28 @@ _Success message with order summary and receipt_
 </details>
 
 <details>
-<summary>📲 <b>Phone Deal</b></summary>
+<summary>📖 <b>Sales Cheat Sheet</b></summary>
 
 <br>
 
-### Search for Best Phone Deal
+### Subscription Overview
 
-![Mobile Deals Search](./docs/phone_deal_search_.png)
-_Enter phone model to find best subscription offers_
+![Cheat Sheet](./cheat_sheet.png)
+_Quick reference guide showing all subscriptions with pricing, discounts, and active campaigns_
 
 ---
 
-### Deal Results
+### Subscription Overview
 
-![Deal Results](./docs/phone_deal_result.png)
-_Compare subscription plans showing best prices and discounts for selected phone_
+![Cheat Sheet](./peng.png)
+_Quick reference guide showing all subscriptions with pricing, discounts, and active campaigns_
+
+---
+
+### Subscription Overview
+
+![Cheat Sheet](./pling.png)
+_Quick reference guide showing all subscriptions with pricing, discounts, and active campaigns_
 
 </details>
 
