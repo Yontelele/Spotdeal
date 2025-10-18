@@ -104,21 +104,7 @@ _Success message with order summary and receipt_
 
 ### Subscription Overview
 
-![Cheat Sheet](./cheat_sheet.png)
-_Quick reference guide showing all subscriptions with pricing, discounts, and active campaigns_
-
----
-
-### Subscription Overview
-
-![Cheat Sheet](./peng.png)
-_Quick reference guide showing all subscriptions with pricing, discounts, and active campaigns_
-
----
-
-### Subscription Overview
-
-![Cheat Sheet](./pling.png)
+![Cheat Sheet](./docs/subscription_overview.png.png)
 _Quick reference guide showing all subscriptions with pricing, discounts, and active campaigns_
 
 </details>
