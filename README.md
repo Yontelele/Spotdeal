@@ -102,9 +102,9 @@ _Success message with order summary and receipt_
 
 <br>
 
-### Subscription Overview
+### Pricing Table
 
-![Subscription Overview](./docs/subscriptions_overview.png)
+![Pricing Table](./docs/pricing_table.png)
 _Quick reference guide showing all subscriptions with pricing, discounts, and active campaigns_
 
 </details>
