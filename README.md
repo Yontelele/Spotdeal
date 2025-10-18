@@ -36,9 +36,9 @@ _Real-time statistics showing total sales, revenue, and trends_
 
 ---
 
-### Individual Performance
+### Individual Performance Table
 
-![Individual Performance](./docs/performance_table.png)
+![Individual Performance Table](./docs/performance_table.png)
 _Individual and team performance tracking_
 
 </details>
@@ -98,19 +98,19 @@ _Success message with order summary and receipt_
 </details>
 
 <details>
-<summary>📖 <b>Sales Cheat Sheet</b></summary>
+<summary>📄 <b>Subscriptions Overview</b></summary>
 
 <br>
 
 ### Subscription Overview
 
-![Cheat Sheet](./docs/subscriptions_overview.png)
+![Subscription Overview](./docs/subscriptions_overview.png)
 _Quick reference guide showing all subscriptions with pricing, discounts, and active campaigns_
 
 </details>
 
 <details>
-<summary>📋 <b>Order Management</b></summary>
+<summary>📦 <b>Order Management</b></summary>
 
 <br>
 
