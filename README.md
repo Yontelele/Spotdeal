@@ -152,11 +152,3 @@ Spotdeal helps salespeople find, compare, and sell the right mobile subscription
 Licensed under **CC BY-NC-ND 4.0** – shared for educational and portfolio purposes.
 
 You may view and study the code, but commercial use, modifications, and redistribution are not permitted. <br/> See [LICENSE](LICENSE) for complete terms.
-
----
-
-<div align="center">
-
-_Developed independently as a portfolio project demonstrating full-stack SaaS development capabilities._
-
-</div>
