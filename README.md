@@ -54,21 +54,28 @@ _Select phone model and view available discounts_
 
 ---
 
-### Step 4: Add to Cart
+### Step 4: Choose Phone
 
-![Add to Cart](./docs/images/step3-cart.png)
+![Add to Cart](./docs/choose_phone_color.png)
 _Review selected items in cart with calculated discounts_
 
 ---
 
-### Step 5: Confirm Sale
+### Step 5: Add to Cart
+
+![Add to Cart](./docs/add_phone_to_cart.png)
+_Review selected items in cart with calculated discounts_
+
+---
+
+### Step 6: Confirm Sale
 
 ![Confirm Sale](./docs/images/step4-confirm.png)
 _Confirm details and register the completed sale_
 
 ---
 
-### Step 6: Sale Confirmation
+### Step 7: Sale Confirmation
 
 ![Confirmation](./docs/images/step5-success.png)
 _Success message with order summary and receipt_
