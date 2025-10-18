@@ -149,6 +149,18 @@ Spotdeal helps salespeople find, compare, and sell the right mobile subscription
 
 ## License
 
+**CC BY-NC-ND 4.0** – This portfolio project is shared for educational purposes only.
+
+You may view and reference the code, but commercial use, modifications, and redistribution are strictly prohibited. See [LICENSE](LICENSE) for full terms.
+
+## License
+
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+This is a portfolio project. You may view and study the code, but commercial use and modifications are prohibited. See [LICENSE](LICENSE) for details.
+
+## License
+
 This project is licensed under **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International** (CC BY-NC-ND 4.0).
 
 **What this means:**
