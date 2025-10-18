@@ -19,15 +19,7 @@
 </div>
 
 ## About the Project
-
-Spotdeal is a sales enablement platform built to help telecom sales representatives increase subscription sales by providing instant access to operator pricing, subscription plans, and phone discounts across all carriers. The system enables sales teams to quickly compare offers and present the most compelling deal to each customer, transforming complex pricing calculations into a clear, consultative workflow. Every completed sale is registered and tracked through a real-time dashboard that displays sales trends, individual performance, and progress toward budget goals.
-
-## About the Project
-
-Spotdeal helps salespeople find, compare, and sell the right mobile subscription in seconds. By gathering operator pricing, campaigns, and phone discounts in one workspace, salespeople can focus on the customer, not the spreadsheet. Every order is tracked in real-time dashboards showing performance, budget progress, and sales trends.
-
-## About the Project
-Spotdeal helps salespeople find, compare, and sell the right mobile subscription in seconds, without juggling multiple operator sites and spreadsheets. By gathering operator pricing, campaigns, and phone discounts in one workspace, salespeople can focus on the customer, not the calculation. Every order is tracked in real-time dashboards showing performance, budget progress, and sales trends.
+Spotdeal helps salespeople find, compare, and sell the right mobile subscription in seconds, without switching between operator sites and spreadsheets. By gathering operator pricing, campaigns, and phone discounts in one workspace, salespeople can focus on the customer, not the calculation. Every order is tracked in real-time dashboards showing performance, budget progress, and sales trends.
 
 ## 📸 Screenshots
 
