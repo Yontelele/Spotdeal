@@ -33,7 +33,7 @@ Spotdeal is a sales enablement platform built to help telecom sales representati
 
 ![Sales Overview](./docs/sales_overview.jpg)
 
-> _Real-time statistics showing total sales, revenue, and trends_
+> _Sales progress by operator, daily trends, and recent orders_
 
 ---
 
@@ -41,8 +41,9 @@ Spotdeal is a sales enablement platform built to help telecom sales representati
 
 ![Individual Performance Table](./docs/performance_table.png)
 
-> [!NOTE]
-> Individual and team performance tracking
+> _Sales rep performance with daily stats and goal progress_
+
+---
 
 </details>
 
