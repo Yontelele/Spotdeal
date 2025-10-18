@@ -106,6 +106,8 @@ Spotdeal is a sales enablement platform built to help telecom sales representati
 
 > _Order successfully registered with confirmation number_
 
+---
+
 </details>
 
 <details>
