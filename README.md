@@ -55,49 +55,56 @@ Spotdeal is a sales enablement platform built to help telecom sales representati
 ### Step 1: Select Operator
 
 ![Select Operator](./docs/select_operator.png)
-_Sales rep selects the operator for the subscription_
+
+> _Choose operator to start sale registration_
 
 ---
 
 ### Step 2: Select Subscription
 
 ![Select Subscription](./docs/select_subscription.png)
-_Choose the subscription plan sold to the customer_
+
+> _Select subscription plan and review order summary_
 
 ---
 
 ### Step 3: Add Phone
 
 ![Add Phone](./docs/add_phone.png)
-_Select phone model and view available discounts_
+
+> _Search and select phone model_
 
 ---
 
 ### Step 4: Choose Phone
 
 ![Choose Phone](./docs/choose_phone_color.png)
-_Select phone color and storage variant_
+
+> _Pick phone color and continue to next step_
 
 ---
 
 ### Step 5: Add to Cart
 
 ![Add to Cart](./docs/add_phone_to_cart.png)
-_Review selected items with calculated discounts_
+
+> _Set discount and payment method, then add phone to order_
 
 ---
 
 ### Step 6: Confirm Sale
 
 ![Confirm Sale](./docs/confirm_sale.png)
-_Confirm details and register the completed sale_
+
+> _Review order details, copy codes, and register the sale_
 
 ---
 
 ### Step 7: Sale Confirmation
 
 ![Confirmation](./docs/sale_confirmation.png)
-_Success message with order summary and receipt_
+
+> _Order successfully registered with confirmation number_
 
 </details>
 
@@ -109,6 +116,7 @@ _Success message with order summary and receipt_
 ### Pricing Table
 
 ![Pricing Table](./docs/pricing_table.png)
+
 _Quick reference guide showing all subscriptions with pricing, discounts, and active campaigns_
 
 </details>
