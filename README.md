@@ -148,21 +148,6 @@ Spotdeal is a sales enablement platform built to help telecom sales representati
 
 </details>
 
-## ⚡ Key Features
-
-- **Instant Sales Registration** – Log completed subscriptions in seconds
-- **Smart Pricing Tools** – Compare operator plans and device discounts across all carriers
-- **Real-Time Analytics** – Track sales trends, individual performance, and budget progress
-- **Interactive Dashboards** – Visualize sales data with Chart.js
-- **Order Management** – Full CRUD operations with cancellation support
-- **Role-Based Access** – Secure JWT authentication for reps and managers
-
-## 💡 The Problem It Solves
-
-Sales reps struggle to quickly compare subscription plans and calculate device discounts across multiple carriers. Spotdeal transforms complex pricing into instant, compelling customer offers.
-
-**Example:** A customer paying 399 kr/month can be shown a better deal at 299 kr/month with 1,000 kr off their device—calculated in seconds. This consultative approach increases conversion rates while helping teams hit their targets.
-
 ## License
 
 This project is licensed under **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International** (CC BY-NC-ND 4.0).
