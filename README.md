@@ -123,7 +123,7 @@ _Compare subscription plans showing best prices and discounts for selected phone
 
 ### Order History
 
-![Order History](./docs/order_history.png)
+![Order History](./docs/order_historyy.png)
 _Overview of all recent orders with customer, operator, and sales rep information_
 
 ---
