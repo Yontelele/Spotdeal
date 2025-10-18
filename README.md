@@ -19,7 +19,17 @@
 </div>
 
 ## About the Project
-Spotdeal helps salespeople find, compare, and sell the right mobile subscription in seconds, without switching between operator sites and spreadsheets. By gathering operator pricing, campaigns, and phone discounts in one workspace, salespeople can focus on the customer, not the calculation. Every order is tracked in real-time dashboards showing performance, budget progress, and sales trends.
+Spotdeal helps telecom sales staff find, compare, and sell the right mobile subscription in seconds, without switching between operator sites and spreadsheets. By gathering operator pricing, campaigns, and phone discounts in one workspace, salespeople can focus on the customer, not the calculation. Every order is tracked in real-time dashboards showing performance, budget progress, and sales trends.
+
+## Key Features
+
+- **Multi-Operator Comparison** – Instantly compare subscription plans, pricing, and campaigns across all telecom operators in one unified view
+- **Intelligent Phone Catalog** – Search and filter phone models with real-time discount calculations, color availability, and payment options
+- **Guided Sales Workflow** – Step-by-step registration process that ensures complete and accurate order information every time
+- **Real-Time Performance Dashboard** – Live sales tracking with individual metrics, daily trends, and visual budget progress indicators
+- **Team Analytics** – Comprehensive performance tables showing each representative's activity, conversion rates, and goal achievement
+- **Complete Order Management** – Full order history with detailed breakdowns and flexible cancellation workflow with reason tracking
+- **Dynamic Pricing Reference** – Quick-access pricing table serving as instant reference for all operators, active campaigns, and current promotions
 
 ## Screenshots
 
@@ -146,6 +156,14 @@ Spotdeal helps salespeople find, compare, and sell the right mobile subscription
 ---
 
 </details>
+
+## Technical Implementation
+
+Spotdeal is built as a full-stack application using ASP.NET Core for the backend API and React with TypeScript for the frontend interface. The system follows Clean Architecture principles with clearly separated layers for presentation, business logic, and data access, making the codebase maintainable, testable, and scalable.
+
+The backend exposes a RESTful API built with ASP.NET Core Web API, utilizing Entity Framework Core for database operations. The data layer implements optimized queries with proper indexing and eager loading strategies to handle concurrent sales operations efficiently. Authentication is managed through JWT tokens, ensuring secure API access with role-based authorization for different user types.
+
+The frontend leverages React's component-based architecture with TypeScript for enhanced type safety and developer experience. State management is handled through React Context API combined with custom hooks, providing a clean approach to sharing state across components. The interface is styled with TailwindCSS utility classes, enabling rapid development while maintaining a consistent design system optimized for tablet devices commonly used in retail environments. The application implements responsive design patterns, lazy loading for optimal performance, and comprehensive form validation to ensure data integrity throughout the sales process.
 
 ## License
 
