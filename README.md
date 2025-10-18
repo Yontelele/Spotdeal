@@ -70,14 +70,14 @@ _Review selected items in cart with calculated discounts_
 
 ### Step 6: Confirm Sale
 
-![Confirm Sale](./docs/images/step4-confirm.png)
+![Confirm Sale](./docs/confirm_sale.png)
 _Confirm details and register the completed sale_
 
 ---
 
 ### Step 7: Sale Confirmation
 
-![Confirmation](./docs/images/step5-success.png)
+![Confirmation](./docs/sale_confirmation.png)
 _Success message with order summary and receipt_
 
 </details>
