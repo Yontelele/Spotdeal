@@ -104,14 +104,14 @@ _Success message with order summary and receipt_
 
 ### Search for Best Deals
 
-![Mobile Deals Search](./docs/mobile_deals_search.png)
+![Mobile Deals Search](./docs/phone_deal_search.png)
 _Enter phone model to find best subscription offers_
 
 ---
 
 ### Deal Results
 
-![Deal Results](./docs/mobile_deals_results.png)
+![Deal Results](./docs/phone_deal_results.png)
 _Compare subscription plans showing best prices and discounts for selected phone_
 
 </details>
