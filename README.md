@@ -157,13 +157,7 @@ You may view and reference the code, but commercial use, modifications, and redi
 
 Licensed under **CC BY-NC-ND 4.0** – shared for educational and portfolio purposes.
 
-You may view and study the code, but commercial use, modifications, and redistribution are not permitted.<br> See [LICENSE](LICENSE) for full terms.
-
-## License
-
-This project is licensed under **CC BY-NC-ND 4.0** and is available for educational review only.
-
-Commercial use, derivative works, and redistribution are strictly prohibited. See [LICENSE](LICENSE) for complete terms.
+You may view and study the code, but commercial use, modifications, and redistribution are strictly permitted. See [LICENSE](LICENSE) for complete terms.
 
 ---
 
