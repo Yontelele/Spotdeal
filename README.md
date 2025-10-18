@@ -104,7 +104,7 @@ _Success message with order summary and receipt_
 
 ### Search for Best Phone Deal
 
-![Mobile Deals Search](./docs/phone_deal_search.png)
+![Mobile Deals Search](./docs/phone_deal_search_.png)
 _Enter phone model to find best subscription offers_
 
 ---
