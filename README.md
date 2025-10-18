@@ -35,7 +35,7 @@ Spotdeal is a sales enablement platform built to help telecom sales representati
 
 ### Step 1: Select Operator
 
-![Select Subscription](./1.png)
+![Select Subscription](./docs/select_operator.png)
 _Sales rep selects the subscription plan sold to the customer_
 
 ---
