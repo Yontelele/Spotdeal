@@ -47,9 +47,9 @@ _Sales rep selects the subscription plan sold to the customer_
 
 ---
 
-### Step 3: Choose Device
+### Step 3: Add Phone
 
-![Choose Device](./docs/search_device.png)
+![Choose Device](./docs/add_phone.png)
 _Select phone model and view available discounts_
 
 ---
