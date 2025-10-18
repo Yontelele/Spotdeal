@@ -25,7 +25,26 @@ Spotdeal is a sales enablement platform built to help telecom sales representati
 ## 📸 Screenshots
 
 <details>
-<summary>📱 <b>Sales Registration Flow</b></summary>
+<summary>📊 <b>Dashboard</b></summary>
+
+<br>
+
+### Sales Overview
+
+![Sales Overview](./docs/sales_overview.jpg)
+_Real-time statistics showing total sales, revenue, and trends_
+
+---
+
+### Performance Table
+
+![Performance Table](./docs/performance_table.png)
+_Individual and team performance tracking_
+
+</details>
+
+<details>
+<summary>📱 <b>Sales Registration</b></summary>
 
 <br>
 
@@ -75,25 +94,6 @@ _Confirm details and register the completed sale_
 
 ![Confirmation](./docs/sale_confirmation.png)
 _Success message with order summary and receipt_
-
-</details>
-
-<details>
-<summary>📊 <b>Dashboard</b></summary>
-
-<br>
-
-### Sales Overview
-
-![Sales Overview](./docs/sales_overview.jpg)
-_Real-time statistics showing total sales, revenue, and trends_
-
----
-
-### Performance Table
-
-![Performance Table](./docs/performance_table.png)
-_Individual and team performance tracking_
 
 </details>
 
