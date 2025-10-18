@@ -98,11 +98,11 @@ _Success message with order summary and receipt_
 </details>
 
 <details>
-<summary>📲 <b>Mobile Deals Search</b></summary>
+<summary>📲 <b>Phone Deal</b></summary>
 
 <br>
 
-### Search for Best Deals
+### Search for Best Phone Deal
 
 ![Mobile Deals Search](./docs/phone_deal_search.png)
 _Enter phone model to find best subscription offers_
