@@ -133,14 +133,18 @@ Spotdeal is a sales enablement platform built to help telecom sales representati
 ### Order History
 
 ![Order History](./docs/order_history.png)
-_Overview of all recent orders with customer, operator, and sales rep information_
+
+> _All registered orders with details and option to cancel_
 
 ---
 
 ### Cancel Order
 
 ![Cancel Order](./docs/cancel_order.png)
-_Click the 🗑️ icon to cancel/void an order for customer returns_
+
+> _Select subscriptions to cancel, provide reason, and confirm cancellation_
+
+---
 
 </details>
 
