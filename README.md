@@ -41,6 +41,8 @@ _Real-time statistics showing total sales, revenue, and trends_
 ![Individual Performance](./docs/performance_table.png)
 _Individual and team performance tracking_
 
+<br>
+
 </details>
 
 <details>
