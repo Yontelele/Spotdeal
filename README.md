@@ -119,7 +119,9 @@ Spotdeal is a sales enablement platform built to help telecom sales representati
 
 ![Pricing Table](./docs/pricing_table.png)
 
-_Quick reference guide showing all subscriptions with pricing, discounts, and active campaigns_
+> _Quick reference table with subscription prices, discounts, and campaigns_
+
+---
 
 </details>
 
