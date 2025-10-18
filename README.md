@@ -51,14 +51,14 @@ _Individual and team performance tracking_
 ### Step 1: Select Operator
 
 ![Select Operator](./docs/select_operator.png)
-_Sales rep selects the subscription plan sold to the customer_
+_Sales rep selects the operator for the subscription_
 
 ---
 
 ### Step 2: Select Subscription
 
 ![Select Subscription](./docs/select_subscription.png)
-_Sales rep selects the subscription plan sold to the customer_
+_Choose the subscription plan sold to the customer_
 
 ---
 
@@ -72,14 +72,14 @@ _Select phone model and view available discounts_
 ### Step 4: Choose Phone
 
 ![Choose Phone](./docs/choose_phone_color.png)
-_Review selected items in cart with calculated discounts_
+_Select phone color and storage variant_
 
 ---
 
 ### Step 5: Add to Cart
 
 ![Add to Cart](./docs/add_phone_to_cart.png)
-_Review selected items in cart with calculated discounts_
+_Review selected items with calculated discounts_
 
 ---
 
@@ -98,28 +98,40 @@ _Success message with order summary and receipt_
 </details>
 
 <details>
-<summary>🔧 <b>Admin Features</b></summary>
+<summary>📲 <b>Mobile Deals Search</b></summary>
 
 <br>
 
-### Manage Subscriptions
+### Search for Best Deals
 
-![Manage Subscriptions](./docs/images/admin-subscriptions.png)
-_Add, edit, or remove subscription plans_
-
----
-
-### Manage Devices
-
-![Manage Devices](./docs/images/admin-devices.png)
-_Update phone catalog and discount mappings_
+![Mobile Deals Search](./docs/mobile_deals_search.png)
+_Enter phone model to find best subscription offers_
 
 ---
 
-### User Management
+### Deal Results
 
-![User Management](./docs/images/admin-users.png)
-_Manage sales representatives and permissions_
+![Deal Results](./docs/mobile_deals_results.png)
+_Compare subscription plans showing best prices and discounts for selected phone_
+
+</details>
+
+<details>
+<summary>📋 <b>Order Management</b></summary>
+
+<br>
+
+### Order History
+
+![Order History](./docs/order_history.png)
+_Overview of all recent orders with customer, operator, and sales rep information_
+
+---
+
+### Cancel Order
+
+![Cancel Order](./docs/cancel_order.png)
+_Click the 🗑️ icon to cancel/void an order for customer returns_
 
 </details>
 
