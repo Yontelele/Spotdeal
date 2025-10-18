@@ -21,7 +21,7 @@
 ## About the Project
 Spotdeal helps salespeople find, compare, and sell the right mobile subscription in seconds, without switching between operator sites and spreadsheets. By gathering operator pricing, campaigns, and phone discounts in one workspace, salespeople can focus on the customer, not the calculation. Every order is tracked in real-time dashboards showing performance, budget progress, and sales trends.
 
-## 📸 Screenshots
+## Screenshots
 
 <details>
 <summary>📊 <b>Dashboard</b></summary>
