@@ -42,14 +42,14 @@ _Sales rep selects the subscription plan sold to the customer_
 
 ### Step 2: Select Subscription
 
-![Select Subscription](./1.png)
+![Select Subscription](./docs/select_subscription.png)
 _Sales rep selects the subscription plan sold to the customer_
 
 ---
 
 ### Step 3: Choose Device
 
-![Choose Device](./steg.png)
+![Choose Device](./docs/search_device.png)
 _Select phone model and view available discounts_
 
 ---
