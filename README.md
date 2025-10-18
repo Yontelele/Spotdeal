@@ -111,7 +111,7 @@ _Enter phone model to find best subscription offers_
 
 ### Deal Results
 
-![Deal Results](./docs/phone_deal_results.png)
+![Deal Results](./docs/phone_deal_result.png)
 _Compare subscription plans showing best prices and discounts for selected phone_
 
 </details>
