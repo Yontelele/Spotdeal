@@ -1,0 +1,391 @@
+# 🚀 Spotdeal CI/CD Pipeline
+# =========================================
+# 1️⃣ Bygger backend (ASP.NET)
+# 2️⃣ Bygger frontend (Staging + Production)
+# 3️⃣ Publicerar artefakter (Backend, Migrations, Frontend)
+# 4️⃣ Deploy → Staging
+# 5️⃣ Deploy → Production
+# =========================================
+
+# Namngivning av byggen
+name: "Spotdeal_Pipeline_v$(Date:yyyyMMdd)$(Rev:.r)"
+
+# Pipelinen triggas vid commit till master
+trigger:
+  branches:
+    include:
+      - master
+
+# Linux agent eftersom Spotdeal körs på Linux
+pool:
+  vmImage: ubuntu-latest
+
+# Variabler
+variables:
+  nodeVersion: "20.x"
+  dotnetVersion: "8.x"
+
+stages:
+  # ===============================
+  # Steg 1: Bygg Spotdeal
+  # ===============================
+  - stage: Build
+    displayName: "🛠️ Build Spotdeal"
+    jobs:
+      # ----------------------------
+      # Jobb 1: Backend (ASP.NET)
+      # ----------------------------
+      - job: Build_Backend
+        displayName: "🛠️ Build Backend (ASP.NET)"
+        steps:
+          # Hämtar koden från repository
+          - checkout: self
+            displayName: "Checkout source code"
+
+          # Installerar .NET SDK
+          - task: UseDotNet@2
+            displayName: "Install .NET SDK"
+            inputs:
+              packageType: sdk
+              version: "$(dotnetVersion)"
+
+          # Återställer alla NuGet-paket
+          - task: DotNetCoreCLI@2
+            displayName: "Restore NuGet packages"
+            inputs:
+              command: restore
+              projects: |
+                api/api.csproj
+                api.tests/api.tests.csproj
+
+          # Bygger backend APIet
+          - task: DotNetCoreCLI@2
+            displayName: "Build Backend API"
+            inputs:
+              command: build
+              projects: "api/api.csproj"
+              arguments: "--configuration Release"
+
+          # Kör Unit Tests
+          - task: DotNetCoreCLI@2
+            displayName: "Run Unit Tests"
+            inputs:
+              command: "test"
+              projects: "api.tests/api.tests.csproj"
+              arguments: '--configuration Release --collect:"XPlat Code Coverage" -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=cobertura DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.ExcludeByFile="**/Migrations/**,**/Program.cs,**/Models/**,**/Dto/**,**/Enums/**,**/AdminDto/**"'
+
+          # Publicerar Code Coverage (visar hur mycket av koden som är testad)
+          - task: PublishCodeCoverageResults@2
+            displayName: "Publish Code Coverage"
+            condition: succeededOrFailed()
+            inputs:
+              summaryFileLocation: "$(Agent.TempDirectory)/**/coverage.cobertura.xml"
+
+          # Installerar Entity Framework tools för att senare kunna genomföra migrations
+          - task: DotNetCoreCLI@2
+            displayName: "Install Entity Framework tools"
+            inputs:
+              command: custom
+              custom: tool
+              arguments: "install --global dotnet-ef --version 8.*"
+
+          # Genererar en SQL-script som används för att uppdatera databasen
+          - task: DotNetCoreCLI@2
+            displayName: "Generate SQL Migration Script"
+            inputs:
+              command: custom
+              custom: ef
+              arguments: "migrations script --idempotent --project api/api.csproj --output $(Build.ArtifactStagingDirectory)/migrations.sql"
+
+          # Publicerar backend till en mapp som senare kommer användas vid deployment
+          - task: DotNetCoreCLI@2
+            displayName: "Publish Backend for deployment"
+            inputs:
+              command: publish
+              projects: "api/api.csproj"
+              arguments: "--configuration Release --output $(Build.ArtifactStagingDirectory)/api"
+              zipAfterPublish: true
+
+          # Sparar backend-artifakten så att deployment-staget kan använda den
+          - task: PublishBuildArtifacts@1
+            displayName: "Store Backend Artifact"
+            inputs:
+              PathtoPublish: "$(Build.ArtifactStagingDirectory)/api"
+              ArtifactName: backend-drop
+
+          # Sparar SQL-skriptet som en artifact så att deployment-staget kan använda den
+          - task: PublishBuildArtifacts@1
+            displayName: "Store Database Migration script"
+            inputs:
+              PathtoPublish: "$(Build.ArtifactStagingDirectory)/migrations.sql"
+              ArtifactName: migrations-drop
+
+      # -----------------------------
+      # Jobb 2: Frontend (Staging)
+      # -----------------------------
+      - job: Build_Frontend_Staging
+        displayName: "🛠️ Build React Frontend (Staging)"
+        steps:
+          # Hämtar koden från repository
+          - checkout: self
+            displayName: "Checkout source code"
+
+          # Installerar Node.js
+          - task: NodeTool@0
+            displayName: "Install Node.js"
+            inputs:
+              versionSpec: "$(nodeVersion)"
+
+          # Installerar alla dependencies
+          - script: |
+              cd web
+              npm ci
+            displayName: "Install Frontend Dependencies"
+
+          # Bygger frontend för staging-miljö
+          - script: |
+              cd web
+              npm run build:staging
+            displayName: "Build Frontend for Staging"
+
+          # Kopierar SWA-config-filen till dist (krävs för att kunna navigera runt i en SPA)
+          - task: CopyFiles@2
+            displayName: "Copy staticwebapp.config.json to Staging Dist"
+            inputs:
+              SourceFolder: "web"
+              Contents: "staticwebapp.config.json"
+              TargetFolder: "web/dist"
+              OverWrite: true
+
+          # Sparar frontend-artifakten så att deployment-staget kan använda den
+          - task: PublishBuildArtifacts@1
+            displayName: "Store Frontend (Staging) Artifact"
+            inputs:
+              PathtoPublish: "web/dist"
+              ArtifactName: frontend-staging-drop
+
+      # -----------------------------
+      # Jobb 3: Frontend (Production)
+      # -----------------------------
+      - job: Build_Frontend_Production
+        displayName: "🛠️ Build React Frontend (Production)"
+        steps:
+          # Hämtar koden från repository
+          - checkout: self
+            displayName: "Checkout source code"
+
+          # Installerar Node.js
+          - task: NodeTool@0
+            displayName: "Install Node.js"
+            inputs:
+              versionSpec: "$(nodeVersion)"
+
+          # Installerar alla dependencies
+          - script: |
+              cd web
+              npm ci
+            displayName: "Install Frontend Dependencies"
+
+          # Bygger frontend för produktions-miljö
+          - script: |
+              cd web
+              npm run build
+            displayName: "Build Frontend for Production"
+
+          # Kopierar SWA-config-filen till dist (krävs för att kunna navigera runt i en SPA)
+          - task: CopyFiles@2
+            displayName: "Copy staticwebapp.config.json to Production Dist"
+            inputs:
+              SourceFolder: "web"
+              Contents: "staticwebapp.config.json"
+              TargetFolder: "web/dist"
+              OverWrite: true
+
+          # Sparar frontend-artifakten så att deployment-staget kan använda den
+          - task: PublishBuildArtifacts@1
+            displayName: "Store Frontend (Production) Artifact"
+            inputs:
+              PathtoPublish: "web/dist"
+              ArtifactName: frontend-production-drop
+
+  # ========================================
+  # Steg 2: Applicera koden till Staging
+  # ========================================
+  - stage: Deploy_Staging
+    displayName: "🚀 Deploy to Staging"
+    dependsOn: Build
+    condition: succeeded()
+    jobs:
+      # ----------------------------------------------
+      # Jobb 1: Kör migrations mot Staging-databasen
+      # ----------------------------------------------
+      - deployment: Run_Staging_Migrations
+        displayName: "📜 Apply Database Migrations (Staging)"
+        environment: "Staging"
+        pool:
+          vmImage: windows-latest # Windows agent för att kunna köra migrations
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                # Hämtar SQL-skript artifact från build-staget (steg 1)
+                - download: current
+                  artifact: migrations-drop
+                  displayName: "Download Migrations Artifacts"
+
+                # Applicerar SQL-migrations mot Staging Databasen
+                - task: SqlAzureDacpacDeployment@1
+                  displayName: "Apply Migrations to Staging Database"
+                  inputs:
+                    azureSubscription: "AzureConnection"
+                    AuthenticationType: "connectionString"
+                    ConnectionString: "$(DATABASE_STAGING_CONNECTION_STRING)"
+                    deployType: "SqlTask"
+                    SqlFile: "$(Pipeline.Workspace)/migrations-drop/migrations.sql"
+
+      # -----------------------------------------
+      # Jobb 2: Applicera Backend till Staging
+      # -----------------------------------------
+      - deployment: Deploy_Backend_To_Staging
+        displayName: "🚀 Deploy Backend → Staging Slot"
+        environment: "Staging"
+        dependsOn: Run_Staging_Migrations
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                # Hämtar backend-artifact från build-staget (steg 1)
+                - download: current
+                  artifact: backend-drop
+                  displayName: "Download Backend Artifact"
+
+                # Applicerar backend till staging-slot på Azure Web App
+                - task: AzureWebApp@1
+                  displayName: "Deploy Backend API (Staging Slot)"
+                  inputs:
+                    azureSubscription: "AzureConnection"
+                    appType: "webAppLinux"
+                    appName: "spotdeal-backend"
+                    deployToSlotOrASE: true
+                    resourceGroupName: "Spotdeal"
+                    slotName: "staging"
+                    package: "$(Pipeline.Workspace)/backend-drop/api.zip"
+                    runtimeStack: "DOTNETCORE|8.0"
+
+      # ------------------------------------------
+      # Jobb 3: Applicera Frontend till Staging
+      # ------------------------------------------
+      - deployment: Deploy_Frontend_To_Staging
+        displayName: "🚀 Deploy Frontend → Staging"
+        environment: "Staging"
+        dependsOn: Run_Staging_Migrations
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                # Hämtar frontend-artifact för staging
+                - download: current
+                  artifact: frontend-staging-drop
+                  displayName: "Download Frontend Artifact"
+
+                # Applicerar frontend till staging Azure Static Web App
+                - task: AzureStaticWebApp@0
+                  displayName: "Deploy Frontend (Staging)"
+                  retryCountOnTaskFailure: 2
+                  inputs:
+                    app_location: "/"
+                    output_location: ""
+                    skip_app_build: true
+                    skip_api_build: true
+                    workingDirectory: "$(Pipeline.Workspace)/frontend-staging-drop"
+                    azure_static_web_apps_api_token: "$(FRONTEND_STAGING_DEPLOYMENT_TOKEN)"
+
+  # =========================================
+  # Steg 3: Applicera koden till Produktion
+  # =========================================
+  - stage: Deploy_Production
+    displayName: "🌐 Deploy to Production"
+    dependsOn: Deploy_Staging
+    condition: succeeded()
+    jobs:
+      # -------------------------------------------------
+      # Jobb 1: Kör migrations mot Produktion-databasen
+      # -------------------------------------------------
+      - deployment: Run_Production_Migrations
+        displayName: "📜 Apply Database Migrations (Production)"
+        environment: "Production"
+        pool:
+          vmImage: windows-latest # Windows agent för att kunna köra migrations
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                # Hämtar SQL-skript artifact från build-staget (steg 1)
+                - download: current
+                  artifact: migrations-drop
+                  displayName: "Download Migrations Artifacts"
+
+                # Applicerar SQL-migrations mot Produktion Databasen
+                - task: SqlAzureDacpacDeployment@1
+                  displayName: "Apply Migrations to Production Database"
+                  inputs:
+                    azureSubscription: "AzureConnection"
+                    AuthenticationType: "connectionString"
+                    ConnectionString: "$(DATABASE_PRODUCTION_CONNECTION_STRING)"
+                    deployType: "SqlTask"
+                    SqlFile: "$(Pipeline.Workspace)/migrations-drop/migrations.sql"
+
+      # -------------------------------------------
+      # Jobb 2: Applicera Backend till Produktion
+      # -------------------------------------------
+      - deployment: Deploy_Backend_To_Production
+        displayName: "🌐 Deploy Backend → Production"
+        environment: "Production"
+        dependsOn: Run_Production_Migrations
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                # Hämtar backend-artifact från build-staget (steg 1)
+                - download: current
+                  artifact: backend-drop
+                  displayName: "Download Backend Artifact"
+
+                # Applicerar backend till production-slot på Azure Web App
+                - task: AzureWebApp@1
+                  displayName: "Deploy Backend API (Production)"
+                  inputs:
+                    azureSubscription: "AzureConnection"
+                    appType: "webAppLinux"
+                    appName: "spotdeal-backend"
+                    deployToSlotOrASE: false
+                    package: "$(Pipeline.Workspace)/backend-drop/api.zip"
+                    runtimeStack: "DOTNETCORE|8.0"
+
+      # -------------------------------------------
+      # Jobb 3: Applicera Frontend till Produktion
+      # -------------------------------------------
+      - deployment: Deploy_Frontend_To_Production
+        displayName: "🌐 Deploy Frontend → Production"
+        environment: "Production"
+        dependsOn: Deploy_Backend_To_Production
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                # Hämtar frontend-artifact för produktion
+                - download: current
+                  artifact: frontend-production-drop
+                  displayName: "Download Frontend Artifact"
+
+                # Applicerar frontend till produktion Azure Static Web App
+                - task: AzureStaticWebApp@0
+                  displayName: "Deploy Frontend (Production)"
+                  retryCountOnTaskFailure: 2
+                  inputs:
+                    app_location: "/"
+                    output_location: ""
+                    skip_app_build: true
+                    skip_api_build: true
+                    workingDirectory: "$(Pipeline.Workspace)/frontend-production-drop"
+                    azure_static_web_apps_api_token: "$(FRONTEND_PRODUCTION_DEPLOYMENT_TOKEN)"

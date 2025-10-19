@@ -1,0 +1,5 @@
+export enum Bindningstider {
+  INGEN_BINDNINGSTID = 1,
+  TOLV_MÅNADER_BINDNINGSTID = 2,
+  TJUGO_FYRA_MÅNADER_BINDNINGSTID = 3,
+}
